@@ -3,9 +3,7 @@
 include 'dbconnect.php';
 
 $results = $conn->query("SELECT * from Names");
-
-echo '<html><h2> Is this thing on?</h2></html>';
-$numfields = 2;
+$numfields = $conn->field_count;
 
 echo '<html><p> Number of Fields: ' . $numfields . '</p>';
 echo "<table border='1' id='resultstable'><tr>";
