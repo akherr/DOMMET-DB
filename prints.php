@@ -23,10 +23,3 @@ foreach ( $results as $row ) {
 
 echo '</table>';
 ?>
-
-<?php
-      ini_set('date.timezone','America/New_York');
-      echo "Last modified: ", date("Y.M.d (D) H:i.", filemtime(__FILE__)), "<br />\n";
-      error_reporting (E_ALL|E_WARNING|E_PARSE);
-      show_source(__FILE__);
-    ?>
