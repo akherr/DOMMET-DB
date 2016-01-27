@@ -6,7 +6,7 @@ p
 {
     color: red;
 }
-headers
+#tableheaders
 {
     color: red;
 }
