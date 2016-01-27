@@ -8,7 +8,7 @@ echo '<html><h2> Is this thing on?</h2></html>';
 $numfields = 2;
 
 echo '<html><p> Number of Fields: ' . $numfields . '</p>';
-echo '<table id ="resultstable"><tr>';
+echo "<table id ='resultstable'><tr>";
 
 
 
