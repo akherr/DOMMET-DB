@@ -8,5 +8,5 @@ p
 }
 headers
 {
-    font-weight:bold;
+    color:red;
 }
