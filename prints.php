@@ -7,13 +7,14 @@ $results = $conn->query("SELECT * from Names");
 echo '<html><h2> Is this thing on?</h2></html>';
 echo '<table id ="resultstable"><tr>';
 
-$numfields = 3;
+$numfields = 2;
 
 echo '<html><p> Number of Fields: ' . $numfields . '</p></html>';
 
 for($i=0; $i<$numfields; $i++)
 {
-    echo '<td>' . mysql_field_name($results, $i). '</td>';
+    $fieldinfo = mysqli_fetch_field($results, $i);
+    echo '<td>' .$fieldinfo->name. '</td>';
 }
 
 echo '</tr>'
