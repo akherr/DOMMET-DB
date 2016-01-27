@@ -11,7 +11,7 @@ echo "<table border='1' id='resultstable'><tr>";
 for($i=0; $i<$numfields; $i++)
 {
     $fieldinfo = mysqli_fetch_field_direct($results, $i);
-    echo '<td><p>' . $fieldinfo->name . '</p></td>';
+    echo '<td>' . $fieldinfo->name . '</td>';
 }
 
 echo '</tr>';
