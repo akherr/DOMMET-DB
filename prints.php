@@ -10,18 +10,15 @@ echo "<table border='1' id='resultstable'><tr>";
 
 for($i=0; $i<$numfields; $i++)
 {
-    echo '<td><p>Inside For Loop before fetch field</p>';
     $fieldinfo = mysqli_fetch_field_direct($results, $i);
-    echo '<p>Inside For Loop before print field name</p>';
-    echo '<p>' . $fieldinfo->name . '</p></td>';
+    echo '<td><p>' . $fieldinfo->name . '</p></td>';
 }
 
-echo '</tr></html>';
+echo '</tr>';
 
 while($row = $results->fetch_assoc()) {
-    echo "<html><p> Inside fetch while";
-    echo '<p id="firstname">' . $row['first'] . '</p>';
-    echo '<p id="lastname">' . $row['last'] . '</p>';
+    echo '<tr><td>' . $row['first'] . '</td>';
+    echo '<td>' . $row['last'] . '</td></tr>';
 }
 
 echo '</table>';
