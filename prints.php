@@ -7,20 +7,20 @@ $results = $conn->query("SELECT * from Names");
 echo '<html><h2> Is this thing on?</h2></html>';
 $numfields = 2;
 
-//echo '<html><p> Number of Fields: ' . $numfields . '</p></html>';
-//echo '<table id ="resultstable"><tr>';
+echo '<html><p> Number of Fields: ' . $numfields . '</p></html>';
+echo '<table id ="resultstable"><tr>';
 
 
 
-//for($i=0; $i<$numfields; $i++)
-//{
-    //echo '<html><p>Inside For Loop before fetch field</p></html>';
-    //$fieldinfo = mysqli_fetch_field_direct($results, $i);
-    //echo '<html><p>Inside For Loop before print field name</p></html>';
-    //echo '<td>' .$fieldinfo->name. '</td>';
-//}
+for($i=0; $i<$numfields; $i++)
+{
+    echo '<html><p>Inside For Loop before fetch field</p></html>';
+    $fieldinfo = mysqli_fetch_field_direct($results, $i);
+    echo '<html><p>Inside For Loop before print field name</p></html>';
+    echo '<td>' .$fieldinfo->name. '</td>';
+}
 
-//echo '</tr>'
+echo '</tr>'
 ?>
 
 <?php
