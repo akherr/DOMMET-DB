@@ -7,7 +7,7 @@ $results = $conn->query("SELECT * from Names");
 echo '<html><h2> Is this thing on?</h2></html>';
 echo '<table id ="resultstable"><tr>';
 
-$numfields = $results->field_count;
+$numfields = 3;
 
 echo '<html><p> Number of Fields: ' . $numfields . '</p></html>';
 
