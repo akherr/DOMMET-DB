@@ -17,7 +17,7 @@ for($i=0; $i<$numfields; $i++)
     echo '<p>Inside For Loop before fetch field</p>';
     $fieldinfo = mysqli_fetch_field_direct($results, $i);
     echo '<p>Inside For Loop before print field name</p>';
-    echo '<td>' .$fieldinfo->name. '</td>';
+    echo '<p>' . printf($fieldinfo->name) . '</p>';
 }
 
 echo '</tr></html>'
