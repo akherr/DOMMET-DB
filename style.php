@@ -9,4 +9,6 @@ p
 #tableheaders
 {
     color: red;
+    font-style: bold;
+    align: center;
 }
