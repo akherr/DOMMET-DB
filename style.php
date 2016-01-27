@@ -8,5 +8,5 @@ p
 }
 headers
 {
-    color:red;
+    color: red;
 }
