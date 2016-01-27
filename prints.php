@@ -2,7 +2,7 @@
 
 include 'dbconnect.php';
 
-$results = $db_connection->query( 'SELECT * from Suppliers' );
+$results = $conn->query( 'SELECT * from Names' );
 
 echo '<table id ="resultstable"><tr>';
 
@@ -17,8 +17,8 @@ for($i=0; $i<numfields; $i++)
 <?php
 
 foreach ( $results as $row ) {
-	echo '<p id="quote">' . $row['testimonial'] . '</p>';
-	echo '<p id="author">&ndash;' . $row['author'] . '</p>';
+	echo '<p id="firstname">' . $row['first'] . '</p>';
+	echo '<p id="lastname">&ndash;' . $row['last'] . '</p>';
 }
 
 echo '</table>';
