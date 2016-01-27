@@ -13,7 +13,9 @@ echo '<html><p> Number of Fields: ' . $numfields . '</p></html>';
 
 for($i=0; $i<$numfields; $i++)
 {
+    echo '<html><p>Inside For Loop before fetch field</p></html>';
     $fieldinfo = mysqli_fetch_field($results, $i);
+    echo '<html><p>Inside For Loop before print field name</p></html>';
     echo '<td>' .$fieldinfo->name. '</td>';
 }
 
