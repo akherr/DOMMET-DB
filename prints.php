@@ -8,7 +8,7 @@ echo '<table id ="resultstable"><tr>';
 
 $numfields = mysql_num_fields($results);
 
-for($i=0; $i<numfields; $i++)
+for($i=0; $i<$numfields; $i++)
 {
     echo '<td>' . mysql_field_name($results, $i). '</td>';
 }
