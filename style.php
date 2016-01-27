@@ -6,3 +6,7 @@ p
 {
     color: red;
 }
+headers
+{
+    font-weight:bold;
+}
