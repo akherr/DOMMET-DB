@@ -4,7 +4,6 @@
     <head> DomMet Contacts DB </head>
 <body>
     <p> This is a test of the DomMet Contacts DB Website </p>
-    <p> now lets see if i can push and pull? </p>
 
 <?php
 include 'prints.php';
