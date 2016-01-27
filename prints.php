@@ -4,6 +4,7 @@ include 'dbconnect.php';
 
 $results = $conn->query( 'SELECT * from Names' );
 
+echo '<html><h2> Is this thing on?';
 echo '<table id ="resultstable"><tr>';
 
 $numfields = mysql_num_fields($results);
