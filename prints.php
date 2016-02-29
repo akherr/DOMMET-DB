@@ -21,5 +21,5 @@ while($row = $results->fetch_assoc()) {
     echo '<td>' . $row['last'] . '</td></tr>';
 }
 
-echo '</table>';
+echo '</table></html>';
 ?>
