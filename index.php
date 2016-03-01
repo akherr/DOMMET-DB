@@ -6,8 +6,12 @@
 <body>
     <p> This is a test of the DomMet Contacts DB Website </p>
 <form method="post" action="prints.php">
-      <input name="printsuppliers" type="submit" />
+      <input name="printsuppliers" type="submit" value="Get Suppliers"/>
 </form>
+<form method="post" action="prints1.php">
+      <input name="printSupplierSpecific" type="submit" value="Get Suppliers Specific" />
+      <input name="printSupplierstxt" type="text" />
+</form>      
 <?php
 echo 
 //include ($_SERVER['DOCUMENT_ROOT']."prints.php");
