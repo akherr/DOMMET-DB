@@ -2,7 +2,8 @@
 
 include 'dbconnect.php';
 
-$results = $conn->query("SELECT * from Names");
+$results = $conn->query("SELECT * from Suppliers");
+echo "<html><p> I am here now </p></html>";
 $numfields = $conn->field_count;
 
 echo '<html><p> Number of Fields: ' . $numfields . '</p>';
