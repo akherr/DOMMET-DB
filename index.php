@@ -8,7 +8,7 @@
 
 <?php
 echo 
-include ("prints.php");
+include ($_SERVER['DOCUMENT_ROOT']."prints.php");
 
 ini_set('date.timezone','America/New_York');
 show_source(__FILE__);
