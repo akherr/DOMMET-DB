@@ -2,7 +2,7 @@
           "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <link rel='stylesheet' type='text/css' href='style.php' />
 <html>
-    <head> DomMet Contacts DB </head>
+    <head> DomMet Contacts DB um what </head>
 <body>
     <p> This is a test of the DomMet Contacts DB Website </p>
 
