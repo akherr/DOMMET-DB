@@ -7,7 +7,6 @@
     <p> This is a test of the DomMet Contacts DB Website </p>
 
 <?php
-echo 
 include ($_SERVER['DOCUMENT_ROOT']."prints.php");
 
 ini_set('date.timezone','America/New_York');
