@@ -1,9 +1,7 @@
 <?php
 
 include ($_SERVER['DOCUMENT_ROOT']."dbconnect.php");
-echo "<html><p> before query </p></html>";
 $results = $conn->query("SELECT * from Suppliers");
-echo "<html><p> I am here now </p></html>";
 $numfields = $conn->field_count;
 
 echo '<html><p> Number of Fields: ' . $numfields . '</p>';
