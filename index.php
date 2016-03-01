@@ -2,13 +2,15 @@
           "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <link rel='stylesheet' type='text/css' href='style.php' />
 <html>
-    <head> DomMet Contacts DB um what </head>
+<head> DomMet Contacts DB</head>
 <body>
     <p> This is a test of the DomMet Contacts DB Website </p>
-
+<form method="post" action="prints.php">
+      <input name="printsuppliers" type="submit" />
+</form>
 <?php
 echo 
-include ($_SERVER['DOCUMENT_ROOT']."prints.php");
+//include ($_SERVER['DOCUMENT_ROOT']."prints.php");
 
 ini_set('date.timezone','America/New_York');
 
