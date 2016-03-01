@@ -7,12 +7,11 @@
     <p> This is a test of the DomMet Contacts DB Website </p>
 
 <?php
-include 'prints.php';
-?>
+echo 
+include ("prints.php");
 
-<?php
-  ini_set('date.timezone','America/New_York');
-  show_source(__FILE__);
+ini_set('date.timezone','America/New_York');
+show_source(__FILE__);
 ?>
 </body>
 </html>
