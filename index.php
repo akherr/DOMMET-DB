@@ -15,7 +15,6 @@
       <?php include ($_SERVER['DOCUMENT_ROOT']."ddprint.php"); ?>
 </form>      
 <?php
-echo 
 //include ($_SERVER['DOCUMENT_ROOT']."prints.php");
 
 ini_set('date.timezone','America/New_York');
