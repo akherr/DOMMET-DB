@@ -6,7 +6,7 @@ $numfields = $conn->field_count;
 echo '<html><p> Number of Fields: ' . $numfields . '</p>';
 echo "<table border='1' id='resultstable'><tr>";
 
-for($i=0; $i<$numfields; $i++)
+for($i=1; $i<$numfields; $i++)
 {
     $fieldinfo = mysqli_fetch_field_direct($results, $i);
     echo "<td id='tableheaders'>" . $fieldinfo->name . "</td>";
@@ -22,7 +22,7 @@ while($row = $results->fetch_assoc()) {
     echo '<td>' . $row['State'] . '</td>';
     echo '<td>' . $row['Zipcode'] . '</td>';
     echo '<td>' . $row['Fax'] . '</td>';
-    echo '<td><a href="' . $row['Website'] . '" target="_blank>"' . $row['Website'] . '</a></td>';
+    echo "<td><a href='" . $row['Website'] . "' target='_blank>'" . $row['Website'] . "</a></td>";
     echo '<td>' . $row['Email'] . '</td></tr>';
     
 }
