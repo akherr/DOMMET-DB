@@ -3,9 +3,9 @@
 include ($_SERVER['DOCUMENT_ROOT']."dbconnect.php");
 $results = $conn->query("SELECT * from Suppliers where Name LIKE 's%'");
 $numfields = $conn->field_count;
-$numrows = mysqli_num_rows($result);
+$numrows = $conn->query("SELECT COUNT(*) from Suppliers where name LIKE 's%'");
 
-echo '<html><p> Number of Fields: ' . $numfields . ' Number of rows: ' . $numrows . '</p>';
+echo '<html><p> Number of Fields: ' . $numfields . ' Number of rows: ' . $numrows[0] . '</p>';
 echo "<table border='1' id='resultstable'><tr>";
 
 for($i=0; $i<$numfields; $i++)
