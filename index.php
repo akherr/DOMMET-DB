@@ -3,6 +3,7 @@
 <link rel='stylesheet' type='text/css' href='style.php' />
 <html>
 <head> DomMet Contacts DB</head>
+<?php include ($_SERVER['DOCUMENT_ROOT']."dbconnect.php"); ?>
 <body>
     <p> This is a test of the DomMet Contacts DB Website </p>
 <form method="get" action="prints.php">
@@ -11,6 +12,7 @@
 <form method="get" action="prints1.php">
       <input name="printSupplierSpecific" type="submit" value="Get Suppliers Specific" />
       <input name="printSupplierstxt" type="text" />
+      <?php include ($_SERVER['DOCUMENT_ROOT']."ddprint.php"); ?>
 </form>      
 <?php
 echo 
