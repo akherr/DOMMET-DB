@@ -7,7 +7,7 @@ echo '<p> Number of rows: ' . $numrowsSelect . '</p>';
 
 while($row2 = $colNames->fetch_assoc()) 
 {
-    if(!(strcmp($row2['Field'],"SupplierID")))
+    if(strcmp($row2['Field'],"SupplierID"))
     {
         echo $row2['Field'];
         //echo "<option value='" . $row2['Field'] . "'>" . $row2['Field'] . "</option>";
