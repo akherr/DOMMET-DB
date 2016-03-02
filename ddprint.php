@@ -1,7 +1,7 @@
 <?php
 $colNames = $conn->query("show columns from Suppliers");
 
-echo "<select name='inputText'><option value='default'>Select Search</option>";
+echo "<select name='printSuppliersSelect'><option value='default'>Select Search</option>";
 
 while($row2 = $colNames->fetch_assoc()) 
 {
