@@ -22,7 +22,7 @@ while($row = $results->fetch_assoc()) {
     echo '<td>' . $row['State'] . '</td>';
     echo '<td>' . $row['Zipcode'] . '</td>';
     echo '<td>' . $row['Fax'] . '</td>';
-    echo "<td><a href='" . $row['Website'] . "' target='_blank>'" . $row['Website'] . "</a></td>";
+    echo "<td><a href='" . $row['Website'] . "' target='_blank'>" . $row['Website'] . "</a></td>";
     echo '<td>' . $row['Email'] . '</td></tr>';
     
 }
