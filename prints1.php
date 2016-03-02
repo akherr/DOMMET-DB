@@ -15,14 +15,14 @@ for($i=0; $i<$numfields; $i++)
 echo '</tr>';
 
 while($row = $results->fetch_assoc()) {
-    echo '<tr><td>' . $row['SupplierID'] . '</td>';
-    echo '<td>' . $row['Name'] . '</td>';
+    //echo '<tr><td>' . $row['SupplierID'] . '</td>';
+    echo '<tr><td>' . $row['Name'] . '</td>';
     echo '<td>' . $row['Address'] . '</td>';
     echo '<td>' . $row['City'] . '</td>';
     echo '<td>' . $row['State'] . '</td>';
     echo '<td>' . $row['Zipcode'] . '</td>';
     echo '<td>' . $row['Fax'] . '</td>';
-    echo '<td>' . $row['Website'] . '</td>';
+    echo '<td><a href="' . $row['Website'] . '" target="_blank>' . $row['Website'] . '</a></td>';
     echo '<td>' . $row['Email'] . '</td></tr>';
     
 }
