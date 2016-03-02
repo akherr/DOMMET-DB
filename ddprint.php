@@ -4,12 +4,20 @@ $numrowsSelect = $colNames->num_rows;
 echo '<p> Number of rows: ' . $numrowsSelect . '</p>';
 
 echo "<select name='inputText'><option value='default'>Select Search</option>";
-for($i=0; $i<$numrowsSelect; $i++)
+
+while($row2 = $colNames->fetch_assoc()) 
 {
-    if(!($colNames[i] = "SupplierID"))
+    if(!($row2[$i] = "SupplierID"))
     {
-        echo "<option value=$colNames[Field]>bob</option>";
+        echo "<option value='" . $row2['Field'] . "'>" . $row2['Field'] . "</option>";
     }
 }
+//for($i=0; $i<$numrowsSelect; $i++)
+//{
+//    if(!($colNames[$i] = "SupplierID"))
+//    {
+//        echo "<option value=$colNames[Field]>bob</option>";
+//    }
+//}
 echo "</select>";
 ?>
