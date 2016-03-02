@@ -7,7 +7,7 @@ for($i=0; $i<$numrowsSelect; $i++)
 {
     if(!($colNames[i] = "SupplierID"))
     {
-        echo "<option value=$colNames[$i]>$colNames[$i]";
+        echo "<option value=$colNames[Field]>$colNames[Field]";
     }
 }
 echo "</select>";
