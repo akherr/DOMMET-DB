@@ -5,7 +5,7 @@ $results = $conn->query("SELECT * from Suppliers where Name LIKE 's%'");
 $numfields = $conn->field_count;
 $numrows = $results->num_rows;
 
-echo '<html><p> Number of Fields: ' . $numfields . ' Number of rows: ' . $numrows[0] . '</p>';
+echo '<html><p> Number of Fields: ' . $numfields . ' Number of rows: ' . $numrows . '</p>';
 echo "<table border='1' id='resultstable'><tr>";
 
 for($i=0; $i<$numfields; $i++)
@@ -29,5 +29,5 @@ while($row = $results->fetch_assoc()) {
     
 }
 
-echo '</table></html>';
+echo '</table><p> Down Here? ' . $numrows . '</html>';
 ?>
