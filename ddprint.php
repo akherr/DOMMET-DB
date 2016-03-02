@@ -7,7 +7,7 @@ echo "<select name='inputText'><option value='default'>Select Search</option>";
 
 while($row2 = $colNames->fetch_assoc()) 
 {
-    if(!($row2[$i] = "SupplierID"))
+    if(!($row2['Field'] = "SupplierID"))
     {
         echo "<option value='" . $row2['Field'] . "'>" . $row2['Field'] . "</option>";
     }
