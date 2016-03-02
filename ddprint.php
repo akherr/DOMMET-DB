@@ -7,11 +7,11 @@ echo '<p> Number of rows: ' . $numrowsSelect . '</p>';
 
 while($row2 = $colNames->fetch_assoc()) 
 {
-    echo $row2['Field'];
-    //if(!($row2['Field'] = "SupplierID"))
-    //{
+    if(!($row2['Field'] = "SupplierID"))
+    {
+        echo $row2['Field'];
         //echo "<option value='" . $row2['Field'] . "'>" . $row2['Field'] . "</option>";
-    //}
+    }
 }
 //for($i=0; $i<$numrowsSelect; $i++)
 //{
