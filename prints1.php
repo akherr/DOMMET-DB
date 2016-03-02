@@ -1,6 +1,6 @@
 <?php
 //include ($_SERVER['DOCUMENT_ROOT']."dbconnect.php");
-$results = $conn->query("SELECT * from Suppliers where" . $_GET["inputText"] . " LIKE '%" . $_GET["printSupplierstxt"] . "%'");
+$results = $conn->query("SELECT * from Suppliers where " . $_GET["printSuppliersSelect"] . " LIKE '%" . $_GET["printSupplierstxt"] . "%'");
 $numfields = $conn->field_count;
 
 echo '<html><p> Number of Fields: ' . $numfields . '</p>';
