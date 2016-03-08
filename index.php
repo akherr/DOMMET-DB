@@ -6,6 +6,7 @@
 <?php include ($_SERVER['DOCUMENT_ROOT']."dbconnect.php"); ?>
 <body>
     <p> This is a test of the DomMet Contacts DB Website </p>
+<a href="createForm.php">Create New Supplier Form </a>    
 <form method="get" action="prints.php">
       <input name="printsuppliers" type="submit" value="Get Suppliers"/>
 </form>
@@ -21,7 +22,6 @@ ini_set('date.timezone','America/New_York');
 ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
-show_source(__FILE__);
 ?>
 </body>
 </html>
