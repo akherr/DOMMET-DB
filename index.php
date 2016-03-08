@@ -6,7 +6,7 @@
 <?php include ($_SERVER['DOCUMENT_ROOT']."dbconnect.php"); ?>
 <body>
     <p> This is a test of the DomMet Contacts DB Website </p>
-<a href="createForm.php">Create New Supplier Form </a>    
+<a href="createSupplierForm.php">Create New Supplier Form </a>    
 <form method="get" action="prints.php">
       <input name="printsuppliers" type="submit" value="Get Suppliers"/>
 </form>
