@@ -73,7 +73,7 @@
         <input name="supWebsite" type="text"></input><br />
         Email:
         <input name="supEmail" type="text"></input><br />
-        <input name="submitCreateSupplier" type="submit"></input>
+        <input name="submitCreateSupplier" type="submit" value="Create New Supplier"></input>
     </p>
 </form>
         

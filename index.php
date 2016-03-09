@@ -6,7 +6,7 @@
 <?php include ($_SERVER['DOCUMENT_ROOT']."dbconnect.php"); ?>
 <body>
     <p> This is a test of the DomMet Contacts DB Website </p>
-<a href="createSupplierForm.php">Create New Supplier Form </a>    
+    <a href="createSupplierForm.php">Create New Supplier Form </a>
 <form method="get" action="prints.php">
       <input name="printsuppliers" type="submit" value="Get Suppliers"/>
 </form>
@@ -14,7 +14,12 @@
       <input name="printSupplierSpecific" type="submit" value="Get Suppliers Specific" />
       <input name="printSupplierstxt" type="text" />
       <?php include ($_SERVER['DOCUMENT_ROOT']."ddprint.php"); ?>
-</form>      
+</form> 
+    <form method="get" action="searchContacts.php">
+        <input name="printContactSpecific" type="submit" value="Get Contact Specific" />
+        <input name="printContacttxt" type="text" />
+        <?php include ($_SERVER['DOCUMENT_ROOT']."contactPrint.php"); ?>
+    </form>
 <?php
 //include ($_SERVER['DOCUMENT_ROOT']."prints.php");
 
