@@ -17,7 +17,7 @@
 </form> 
     <form method="get" action="searchContacts.php">
         <input name="printContactSpecific" type="submit" value="Get Contact Specific" />
-        <input name="printContacttxt" type="text" />
+        <input name="printContactstxt" type="text" />
         <?php include ($_SERVER['DOCUMENT_ROOT']."contactPrint.php"); ?>
     </form>
 <?php
