@@ -1,7 +1,7 @@
 <?php
 
 include ($_SERVER['DOCUMENT_ROOT']."dbconnect.php");
-$results = $conn->query("SELECT * from Suppliers where Name LIKE 's%'");
+$results = $conn->query("SELECT * from Suppliers");
 $numfields = $conn->field_count;
 $numrows = $results->num_rows;
 
